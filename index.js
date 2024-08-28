@@ -29,7 +29,7 @@ const server=app.listen(port,async()=>{
 
 const io = socket(server, {
   cors: {
-    origin: '18.207.225.92:3000',
+    origin: 'http://18.207.225.92:3000',
     credentials: true,
   },
 })
