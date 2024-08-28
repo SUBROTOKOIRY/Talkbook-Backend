@@ -10,6 +10,11 @@
                                     # Stage 1: Build Stage
 FROM node:14 AS build
 
+# ARG CORS_ORIGIN
+
+# # Set the environment variable
+# ENV CORS_ORIGIN=$CORS_ORIGIN
+
 # Set the working directory
 WORKDIR /usr/src/app
 
