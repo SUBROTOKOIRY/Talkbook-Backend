@@ -19,7 +19,7 @@ app.use(express.urlencoded({extended:false}));
 app.use('/api/auth',userRoute);
 app.use('/api/msg',messageRoutes);
 app.use('/checkDocker', (req, res) => {
-  res.send('Docker is running on ec2 instance and everything is fine')
+  res.send('Docker image is running on ec2 instance and everything is fine')
 });
 
 const server=app.listen(port,async()=>{   
