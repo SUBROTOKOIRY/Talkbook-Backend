@@ -24,12 +24,12 @@ app.use('/checkDocker', (req, res) => {
 
 const server=app.listen(port,async()=>{   
     await connectDb(uri)
-    console.log(process.env.CORS_ORIGIN,`Server is running on port: ${port}`);
+    console.log(`Server is running on port: ${port}`);
 });
 
 const io = socket(server, {
   cors: {
-    origin: process.env.CORS_ORIGIN,
+    origin: '*',
     credentials: true,
   },
 })
