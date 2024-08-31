@@ -40,5 +40,4 @@ COPY --from=build /usr/src/app ./
 EXPOSE 5000
 
 # Set the entry point and default command
-ENTRYPOINT ["npm"]
-CMD ["start"]
+ENTRYPOINT ["npm","start"]
