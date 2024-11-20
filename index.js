@@ -24,7 +24,7 @@ app.use('/checkDocker', (req, res) => {
 
 const server=app.listen(port,async()=>{   
     await connectDb(uri)
-    console.log(`Server is running on port: ${port}`);
+    console.log(`Server has started on port: ${port}`);
 });
 
 const io = socket(server, {
